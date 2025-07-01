@@ -16,6 +16,17 @@ body {
 
 .container {
     display: flex;
+    gap: 30px;
+}
+
+.left-panel {
+    flex-grow: 1;
+    flex-basis: 50%;
+}
+
+.right-panel {
+    flex-grow: 1;
+    flex-basis: 100%;
 }
 
 .logo-container {
@@ -32,6 +43,5 @@ body {
 
 .logo-container img, h1 {
     display: inline;
-    height: 100%;
     margin: 0;
 }
