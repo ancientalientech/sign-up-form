@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Runic&display=swap" rel="stylesheet">
     <title>Sign-Up Form</title>
 </head>
 <body>
@@ -10,10 +13,10 @@
         <div class="left-panel">
             <div class="logo-container">
                 <img src="images/odin-lined.png" alt="odin-logo">
-                <h1 class="logo-text">ODIN</h1>
+                <h1 class="logo-text">ᚨᛚᛁᛗ</h1>
             </div>
             <div class="img-caption">
-
+                <p>Photo by <a href="https://unsplash.com/@jonasdegener?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jonas Degener</a> on <a href="https://unsplash.com/photos/beautiful-sky-with-fluffy-clouds-at-sunset-elIgPnxgCr8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
             </div>
         </div>
         <div class="right-panel">
@@ -42,7 +45,7 @@
                             </div>
                             <div class="input-group">
                                 <label for="user-email">Email</label>
-                                <input type="email" name="user-email" id="user-email">
+                                <input type="email" name="user-email" id="user-email" required>
                             </div>
                             <div class="input-group">
                                 <label for="user-tel">Phone Number</label>
@@ -50,11 +53,17 @@
                             </div>
                             <div class="input-group">
                                 <label for="pass">Password</label>
-                                <input type="password" name="pass" id="pass">
+                                <input type="password" name="pass" id="pass" 
+                                required
+                                minlength="4"
+                                maxlength="15">
                             </div>
                             <div class="input-group">
                                 <label for="confirm">Confirm Password</label>
-                                <input type="password" name="confirm" id="confirm">
+                                <input type="password" name="confirm" id="confirm" 
+                                required 
+                                minlength="4" 
+                                maxlength="15">
                             </div>
                         </div>
                     </div>
